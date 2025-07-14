@@ -7,7 +7,7 @@ This is a simple, responsive portfolio built with **HTML** and **CSS**, showcasi
 
 ## 🔗 Live Demo
 
-[🔴 View Live Website](https://your-live-link.com) <!-- ضع رابط الموقع بعد النشر -->
+[🔴 View Live Website](https://abd-el-rahman-adel-dev.github.io/dev-portfolio/) <!-- ضع رابط الموقع بعد النشر -->
 
 ---
 
@@ -41,6 +41,7 @@ Quick info about my skills, training, and a link to download my CV.
 | Section         | Preview                          |
 |-----------------|----------------------------------|
 | Home            | ![](./images/screenshot-1.png)   |
+| Home Dark            | ![](./images/screenshot-dark-1.png)   |
 | About & Hobbies | ![](./images/screenshot-2.png)   |
 | Birthday & Contact | ![](./images/screenshot-3.png) |
 | Countries & CV  | ![](./images/screenshot-4.png)   |
@@ -58,8 +59,8 @@ Quick info about my skills, training, and a link to download my CV.
 
 ## 📬 Contact Me
 
-- **LinkedIn:** [Abd El-Rahman Adel](https://www.linkedin.com/in/abdelrahmanadel)  
-- **GitHub:** [Abdo-Ad3l](https://github.com/Abdo-Ad3l)  
+- **LinkedIn:** [Abd El-Rahman Adel](https://www.linkedin.com/in/abd-el-rahman-adel-dev)  
+- **GitHub:** [Abdo-Ad3l](https://github.com/abd-el-rahman-adel-dev)  
 - **Email:** abdelrahman.adel.js@gmail.com
 
 ---
