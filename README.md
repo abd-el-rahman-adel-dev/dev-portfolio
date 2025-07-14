@@ -60,7 +60,7 @@ Quick info about my skills, training, and a link to download my CV.
 ## 📬 Contact Me
 
 - **LinkedIn:** [Abd El-Rahman Adel](https://www.linkedin.com/in/abd-el-rahman-adel-dev)  
-- **GitHub:** [Abdo-Ad3l](https://github.com/abd-el-rahman-adel-dev)  
+- **GitHub:** [Abd El-Rahman Adel](https://github.com/abd-el-rahman-adel-dev)  
 - **Email:** abdelrahman.adel.js@gmail.com
 
 ---
