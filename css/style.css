@@ -1,0 +1,752 @@
+/* ========== Reset ========== */
+:root {
+  --main-color: #1e90ff;
+  --secondary-color: #b8670a;
+  --hover-color: #1b83eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: block;
+  background-color: var(--main-color);
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.3s;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #1b83eb;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+  border-color: var(--hover-color);
+}
+
+/* Dark Mode Theme */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .section {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark #home {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark #home h1 > span {
+  color: #99b5e6;
+}
+body.dark i {
+  color: #e0e0e0;
+}
+
+body.dark .section h3,
+body.dark .section h2 {
+  color: #e0e0e0;
+}
+
+body.dark #birthday-content textarea,
+body.dark input,
+body.dark textarea {
+  background-color: #1c1c1c;
+  border: none;
+  color: #e0e0e0;
+  outline: none;
+}
+
+body.dark header {
+  background-color: #1c1c1c;
+}
+
+body.dark nav ul li a {
+  color: #ccc;
+}
+
+body.dark nav ul li a:hover,
+body.dark nav ul li a.active {
+  color: var(--main-color);
+}
+
+body.dark .card,
+body.dark .slide {
+  background-color: #222;
+}
+
+body.dark .card p,
+body.dark .slide p {
+  color: #aaa;
+}
+
+body.dark .theme-toggle-btn {
+  border-color: #ccc;
+  color: #ccc;
+}
+
+/* ========== Header/Navbar ========== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+nav ul li a {
+  color: #ddd;
+  font-weight: 600;
+  padding: 6px 8px;
+  transition: 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--hover-color);
+}
+
+/* ========== Section Layout ========== */
+.section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 100px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* ========== Home ========== */
+#home {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  height: 100vh;
+  align-items: center;
+  margin-top: 0;
+  box-shadow: none;
+}
+
+#home h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+#home h1 span {
+  font-size: 50px;
+  color: #002057;
+  padding: 10px;
+}
+#home p {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.typing-text {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#home .btn {
+  font-size: 22px;
+}
+
+.profile {
+  width: 400px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  filter: blur(2px);
+  transition: 0.5s;
+}
+
+.profile:hover {
+  filter: blur(0);
+}
+
+/* ========== Social Icons ========== */
+.socials {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-icons li a {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons li a:hover {
+  color: var(--hover-color);
+  transform: scale(1.2);
+}
+
+/* ========== About ========== */
+#about .content {
+  align-items: flex-start;
+}
+#about .content h3 {
+  font-size: 23px;
+}
+#about .content .tag {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+#about .content p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#about .content .box strong {
+  color: var(--hover-color);
+}
+/* ========== Hobbies ========== */
+.hobby-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.3);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 10px 0 5px;
+  color: #222;
+}
+.card p {
+  padding: 0 10px 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ========== Birthday ========== */
+/* Birthday Section */
+#birthday {
+  text-align: center;
+}
+
+#birthday i {
+  color: #0f6ad9;
+  font-size: 50px;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#birthday i:hover {
+  transform: scale(1.05);
+}
+
+#birthday-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#birthday-content textarea {
+  width: 90%;
+  max-width: 400px;
+  height: 100px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#birthday-content textarea:focus {
+  border-color: #1e90ff;
+}
+
+#birthday-content button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#birthday-content button:hover {
+  background-color: #0f6ad9;
+  transform: scale(1.05);
+}
+
+#birthday-content p {
+  font-size: 1.2rem;
+  color: #1e90ff;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* ========== Contact ========== */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+/* Form Styling */
+form {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #1e90ff;
+}
+
+/* Submit Button */
+
+form a button {
+  background-color: #1e90ff;
+  display: block;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0f6ad9;
+  transform: scale(1.05);
+}
+
+/* Social Icons */
+.social {
+  margin-top: 20px;
+}
+
+.social i {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social .facebook:hover {
+  color: var(--hover-color);
+}
+.social .instagram:hover {
+  color: var(--secondary-color);
+}
+.social .linkedin:hover {
+  color: var(--hover-color);
+}
+
+/* ========== Countries Slider ========== */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #1e90ff #eee;
+}
+
+.slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 4px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: #1e90ff;
+  border-radius: 4px;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.slide h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #002057;
+}
+
+.slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.slide p {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/* ========== CV ========== */
+/* CV Section Simple Style */
+#cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cv p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 25px;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #005fcc;
+}
+
+/* ========== Footer ========== */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: #222;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer h1 {
+  font-size: 20px;
+}
+.footer h1 i {
+  color: red;
+}
+.footer h1 a {
+  color: var(--secondary-color);
+}
+
+/* ========== Responsive Design ========== */
+
+/* Mobile Nav Toggle */
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+  }
+
+  #main-nav {
+    display: none;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #main-nav.active {
+    display: flex;
+  }
+}
+
+/* Media Mobile */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #main-nav {
+    justify-content: center;
+  }
+
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide {
+    width: 80vw !important;
+    height: 350px;
+    padding: 0;
+  }
+  .slide img {
+    height: 250px;
+    width: 50%;
+  }
+}
+
+/* Media Tablet  */
+
+@media (max-width: 992px) {
+  header {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .theme-toggle-btn {
+    margin-left: 10px;
+  }
+
+  a.logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    gap: 0px;
+  }
+  /* Home Page */
+  #home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #home .content {
+    align-items: center;
+  }
+
+  .section h2,
+  #home h1 {
+    font-size: 25px;
+  }
+  #home h1 span {
+    font-size: 30px;
+  }
+  #home p {
+    font-size: 18px;
+  }
+  #home p span {
+    font-size: 23px;
+  }
+  #home .btn {
+    font-size: 15px;
+  }
+
+  #home .socials {
+    margin: 0;
+  }
+  #home .socials i {
+    font-size: 25px;
+  }
+
+  .section {
+    max-height: fit-content;
+  }
+
+  .profile {
+    width: 250px;
+    margin: 20px auto 0;
+  }
+
+  .hobby-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .slider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .slide {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .slide img {
+    width: 350px;
+  }
+
+  .section {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  #about .content {
+    align-items: center;
+    font-size: 15px;
+  }
+
+  #about .content h3 {
+    text-align: center;
+  }
+
+  #cv p {
+    text-align: center;
+  }
+
+  .btn-cv {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer h1 {
+    font-size: 16px;
+  }
+}

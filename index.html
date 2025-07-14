@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML & CSS Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <!-- Start Nav Bar -->
+    <header>
+      <a href="#" class="logo">Abd El-Rahman</a>
+      <button id="menu-toggle" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#birthday">Birthday</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#countries">Countries</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Nav Bar -->
+
+    <!-- Start Home -->
+    <div class="section" id="home">
+      <div class="content">
+        <h1>
+          Hi There,<br />
+          I'm <span>Abd El-Rahman Adel</span>
+        </h1>
+        <p>I AM INTO <span class="typing-text">Frontend Development</span></p>
+        <a href="#about" class="btn"
+          ><span>ABOUT ME</span>
+          <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
+              <a
+                class="linkedin"
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/abd-el-rahman-adel-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="github"
+                aria-label="GitHub"
+                href="https://github.com/abd-el-rahman-adel-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="twitter"
+                aria-label="Twitter"
+                href="https://x.com/3bdo3adl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="telegram"
+                aria-label="Telegram"
+                href="https://t.me/AbdelRhmaanAdel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="instagram"
+                aria-label="Instagram"
+                href="https://www.instagram.com/abd.el.rahman.adel.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dev"
+                aria-label="Dev"
+                href="https://www.facebook.com/abd.el.rahman.adel.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img
+        src="./images/my-photo.jpg"
+        alt="Abd El-Rahman Adel"
+        class="profile"
+      />
+    </div>
+    <!-- End Home -->
+
+    <!-- Start About -->
+    <div class="section" id="about">
+      <h2 class="heading">
+        <i class="fas fa-user-alt"></i> About <span>Me</span>
+      </h2>
+
+      <div class="content">
+        <h3>I'm Abd El-Rahman Adel</h3>
+        <span class="tag">Front End Developer</span>
+        <p>
+          I’m currently a student in the MEARN track at ITI — learning and
+          building skills in modern web development technologies like MongoDB,
+          Express, Angular/React, and Node.js. I'm passionate about solving
+          real-world problems through code and creating web applications that
+          combine both functionality and beautiful design.
+        </p>
+        <p>
+          My goal is to become a professional full-stack developer who not only
+          builds code, but builds value.
+        </p>
+
+        <div class="box-container">
+          <div class="box">
+            <p><strong> Email : </strong> abdelrahman.adel.js@gmail.com</p>
+            <p>
+              <strong>Address:</strong> Beni Suef City, Beni Suef, Egypt - 62511
+            </p>
+          </div>
+        </div>
+
+        <div class="resumebtn">
+          <a href="#cv" class="btn"
+            ><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Hobbies -->
+    <div class="section" id="hobbies">
+      <h2>My Hobbies</h2>
+      <div class="hobby-cards">
+        <div class="card">
+          <img src="./images/programming.jpg" alt="Programming" />
+          <h3>Programming</h3>
+          <p>
+            I enjoy building websites and solving real-world problems with code.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./images/gaming.jpg" alt="Gaming" />
+          <h3>Gaming</h3>
+          <p>I love playing strategy and online games in my free time.</p>
+        </div>
+        <div class="card">
+          <img src="./images/reading.jpg" alt="Reading" />
+          <h3>Reading</h3>
+          <p>I read about self-development, productivity, and tech.</p>
+        </div>
+        <div class="card">
+          <img src="./images/photography.jpg" alt="Photography" />
+          <h3>Photography</h3>
+          <p>I enjoy capturing special moments with my camera.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Hobbies -->
+
+    <!-- Start Birthday -->
+    <div class="section" id="birthday">
+      <h2>🎂 My Birthday 🎂</h2>
+      <p style="text-align: center; font-size: 18px; margin-bottom: 15px">
+        🎈 My Birthday is on <strong>8th September 2003</strong>
+      </p>
+      <div id="birthday-content">
+        <i class="fa-solid fa-cake-candles"></i>
+      </div>
+    </div>
+    <!-- End Birthday -->
+
+    <!-- Start Contact -->
+    <div class="section" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" onsubmit="return false;">
+        <input
+          autocomplete="additional-name"
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          autocomplete="additional-email"
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          autocomplete="additional-Message"
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <a href=""> <button type="button" class="btn">Send</button></a>
+      </form>
+
+      <div class="social">
+        <a
+          href="https://www.facebook.com/abd.el.rahman.adel.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="facebook fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/abd.el.rahman.adel.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="instagram fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abd-el-rahman-adel-dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="linkedin fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Start Countries -->
+    <div class="section" id="countries">
+      <h2>Countries I Want to Visit</h2>
+      <div class="slider">
+        <div class="slide">
+          <h3>Japan</h3>
+          <img src="./images/japan.jpg" alt="Japan" />
+          <p>Land of innovation, cherry blossoms, and rich traditions.</p>
+        </div>
+        <div class="slide">
+          <h3>Italy</h3>
+          <img src="./images/italy.jpg" alt="Italy" />
+          <p>Famous for its art, architecture, and delicious cuisine.</p>
+        </div>
+        <div class="slide">
+          <h3>France</h3>
+          <img src="./images/france.jpg" alt="France" />
+          <p>Home of the Eiffel Tower, fashion, and romantic vibes.</p>
+        </div>
+        <div class="slide">
+          <h3>Turkey</h3>
+          <img src="./images/turkey.jpg" alt="Turkey" />
+          <p>A magical blend of Eastern culture and Western charm.</p>
+        </div>
+        <div class="slide">
+          <h3>Saudi Arabia</h3>
+          <img src="./images/saudi.jpg" alt="Saudi Arabia" />
+          <p>Spiritual destination with a mix of tradition and progress.</p>
+        </div>
+        <div class="slide">
+          <h3>Maldives</h3>
+          <img src="./images/maldives.jpg" alt="Maldives" />
+          <p>
+            Tropical paradise with crystal-clear waters and white sandy beaches.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Countries -->
+
+    <!-- Start CV -->
+    <div class="section" id="cv">
+      <h2>My CV</h2>
+      <p><strong>Name:</strong> Abd El-Rahman Adel</p>
+      <p><strong>Skills:</strong> HTML, CSS, JS, React</p>
+      <p><strong>Experience:</strong> Training at ITI MEARN Track</p>
+      <a
+        href="https://drive.google.com/file/d/15aN_R1rQRCWMnp4T5nJovug6jRyqLxUu/view"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-cv"
+        >Download My CV</a
+      >
+    </div>
+    <!-- End CV -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <h1 class="credit">
+        Designed with <i class="fa fa-heart pulse"></i> by
+        <a target="_blank" href="https://www.linkedin.com/in/jigar-sable"
+          >Abd El-rahman Adel</a
+        >
+      </h1>
+    </div>
+    <!-- End Footer -->
+
+    <!-- JS Logic for Birthday div -->
+    <script>
+      // ScrollSpy + Active Link Highlight
+      const sections = document.querySelectorAll(".section");
+      const navLinks = document.querySelectorAll("nav ul li a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (pageYOffset >= sectionTop - 120) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Click handler to set active class manually (in case of click)
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+      // BirthDay Message
+      setTimeout(() => {
+        const birthdayDiv = document.getElementById("birthday-content");
+        birthdayDiv.innerHTML = `
+          <textarea
+            autocomplete="additional-Message"
+            id="birthdayMessage"
+            placeholder="Write me a kind birthday message 😊"
+          ></textarea>
+          <button type="button" onclick="showThanks()" class="btn">Send</button>
+        `;
+      }, 10000);
+
+      function showThanks() {
+        const birthdayDiv = document.getElementById("birthday-content");
+        birthdayDiv.innerHTML =
+          "<p>🎉 Thank you for your lovely message! 🎉</p>";
+      }
+      // Dark Mode
+      const toggleBtn = document.getElementById("theme-toggle");
+
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+          toggleBtn.textContent = "☀️";
+        } else {
+          toggleBtn.textContent = "🌙";
+        }
+      });
+
+      // Mobile Nav Toggle
+      const menuBtn = document.getElementById("menu-toggle");
+      const nav = document.getElementById("main-nav");
+
+      menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+
+      // Close mobile nav when clicking a link
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
