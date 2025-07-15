@@ -68,3 +68,7 @@ Quick info about my skills, training, and a link to download my CV.
 ## 📄 License
 
 This project is open-source and available under the **MIT License**.
+
+---
+
+## ⭐ If you like this project, please give it a star on GitHub!
