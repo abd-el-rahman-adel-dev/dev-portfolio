@@ -7,7 +7,7 @@ Here, you can explore my background, skills, hobbies, and get in touch for colla
 
 ## 🔗 Live Demo
 
-[🔴 View Live Website](https://abd-el-rahman-adel-dev.github.io/dev-portfolio/) <!-- ضع رابط الموقع بعد النشر -->
+[🔴 View Live Website](https://codebyabdo.github.io/dev-portfolio/) <!-- ضع رابط الموقع بعد النشر -->
 
 ---
 
@@ -74,8 +74,8 @@ Contributions are welcome! Feel free to fork the repo, make changes, and open a 
 
 ## 📬 Contact Me
 
-- **LinkedIn:** [Abd El-Rahman Adel](https://www.linkedin.com/in/abd-el-rahman-adel-dev)  
-- **GitHub:** [Abd El-Rahman Adel](https://github.com/abd-el-rahman-adel-dev)  
+- **LinkedIn:** [Abd El-Rahman Adel](https://www.linkedin.com/in/codebyabdo)  
+- **GitHub:** [Abd El-Rahman Adel](https://github.com/codebyabdo)  
 - **Email:** abdelrahman.adel.js@gmail.com
 
 ---
